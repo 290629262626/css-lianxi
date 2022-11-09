@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+           width: 200px;
+           height: 200px;
+           padding: 20px;
+           border:20px dotted black;
+           background-image: url(./tp/2.jpg);
+           background-repeat: no-repeat;
+        }
+        .box1{
+            background-size: auto;/*根据图片尺寸定位*/
+        }
+        .box2{
+            width: 600px;
+            background-size: cover;/**/
+        }
+        .box3{
+            background:contain;
+        }
+        .box4{
+            background-size:200px auto ;
+        }
+        .box5{
+            background-size:240px auto ;
+        }
+    </style>
+</head>
+<body>
+    background-size: auto;
+    <div class="box box1"></div>
+    background-size: cover;
+    <div class="box box2"></div>
+    background:contain;
+    <div class="box box3"></div>
+    background-size:240px auto ;
+    <div class="box box4"></div>
+    background-size:240px auto ;
+    <div class="box box5"></div>
+</body>
+</html>

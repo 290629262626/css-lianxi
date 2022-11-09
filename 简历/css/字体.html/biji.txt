@@ -1,0 +1,107 @@
+font
+
+字体属性是什么？
+
+    CSS Fonts 是 CSS 的一个模块，
+
+    它定义了与字体相关的属性以及如何加载字体资源。
+
+    它允许您定义字体的样式：
+        字体系列
+        字体大小
+        字体粗细
+        行高
+        以及当多个字符可用于单个字符时要使用的字形变体。
+
+    font符合属性
+
+    font-family设置字体系列
+
+    font-style设置字体样式
+
+    font-variant字体变形
+
+    font-weight字体粗细
+
+    line-height行高
+
+    font-size字体大小
+
+平台 	中文衬线字体 	中文非衬线字体 	英文衬线字体 	英文非衬线字体
+通用 	serif 	sans-serif 	serif 	sans-serif
+window 	宋体 	微软雅黑 	Times 	arial
+Mac 	宋体 	苹方 		San-Francsicol
+Andriod 		思源黑体 		
+IOS 		苹方 		
+其他 				
+
+*说明字体分为两种：
+
+    通用字体系列：指一系列具有共同风格的字体系列，如衬线和非衬线
+    特殊字体：指某一个字体，比如：微软雅黑、苹方、思源黑体
+
+font-family
+
+定义：用于设置页面字体外观。
+
+语法
+body{
+    font-family:font-family: Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
+}
+
+解析：
+body{
+    font-family:英文字体，苹果中文字体，window中文字体，
+        通用非衬线字体
+}
+
+语法规则：
+
+    可以设置多个字体名称或字体系列名称作为属性值
+
+    多个字体名称之间使用逗号隔开
+
+    如果字体名称含有特殊字符需要加引号，比如：
+        'Microsof Yahei'空格是特殊字符
+        'sans-serif'横线是特殊字符
+        '微软雅黑'中文也是特殊字符
+
+    特殊字体在前，通用字体在后
+
+    英文字体在前，中文字体在后
+
+font-size
+
+定义： 定义页面字体的大小
+
+语法
+body{
+    font-size:相对值|绝对值
+}
+
+使用相对单位设置font-size
+
+    关键词：medium 默认值
+    %
+    em
+    rem
+    vh/vw
+
+使用绝对单位设置font-size
+
+    px
+
+用法：
+
+    在做网页的时候，第一步要确定根字号大小
+
+html{
+    font-size:16px;/*根元素字号16px*/
+    font-size:62.5%;/*根元素字号10px*/
+}
+
+    在设置页面字号的时候，要有字号层级的意识，也就是说你需要确定：
+        页面最大字号：最大的标题元素
+        页面最小字号：版权文字、补充说明描述性的文字
+        正文字号：一般是14px或16px
+
